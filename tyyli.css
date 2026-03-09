@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background-color: #069b33;
+    
+}
+
+.slogan {
+    text-align: center;
+    font-style: italic;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+/* tuotte näppäinten väri */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+/* leiman väri */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* mobiili */
+@media only screen and (max-width: 430px) {
+
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* keskikokoiset näytöt */
+@media only screen and (min-width: 431px) and (max-width: 1200px) {
+
+}
+
+/* isot näytöt */
+@media only screen and (min-width: 1201px) {
+
+}
+
+/* sivun banneri */
+.hero {
+    background-image: url("images/golf-header.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+/* Tausta tekstille */
+.hero h1,
+.hero p {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 30px;
+}
+
+/* nappi etusivulle */
+
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.brand {
+    width: 200px;
+}
+
+/* mailat */
+.mailat-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.maila-kortti {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.maila-kortti img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.maila-kortti h3 {
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.hinta {
+    font-weight: bold;
+    color: #069b33;
+    font-size: 1.2em;
+}
+/* Pallojen visuaaliset jutut */
+.brand {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.ball {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 6px 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #069b33;
+}
+
